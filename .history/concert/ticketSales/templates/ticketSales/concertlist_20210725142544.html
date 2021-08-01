@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html dir="rtl">
+    <head>
+        <title>سامانه فروش بلیط کنسرت</title>
+    </head>
+    <body>
+        <h1>لیست کنسرت ها</h1>
+        <ul>
+            {% if concertlist %}
+                {% for concert in concertlist %}
+                    <li>
+                        {{ concert }}
+                    </li>
+                {% endfor %}
+            {% endif %}    
+        </ul>
+    </body>
+</html>

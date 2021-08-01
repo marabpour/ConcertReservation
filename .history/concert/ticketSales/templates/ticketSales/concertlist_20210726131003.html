@@ -1,0 +1,16 @@
+
+                
+                    {% if concertlist %}
+                        {% for concert in concertlist %}
+                            <div class="col-md-2">
+                                <a>
+                                    <div class="imageBox">
+                                        <img src="{{ concert.Poster.url }}">
+                                        {{ concert  }}
+                                    </div>
+                                </a>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+               
+      

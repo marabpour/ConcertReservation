@@ -1,0 +1,35 @@
+p{
+    color:darkslateblue;
+    font-size: 20px;
+}
+
+.box{
+    background-color:mediumturquoise ;
+    padding-top: 40px;
+    
+    text-align: center;
+}
+
+.imageBox{
+    margin: 5px;
+    background-color: whitesmoke;
+    text-align: center;
+    font-size: 15px;
+    border:1px darkslateblue;
+    padding:10px
+}
+
+.imageBox img{
+    width: 100%;
+    height: auto;
+}
+
+.btnul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.btnul li{
+    float: left;
+    margin-left: 10px;
+}

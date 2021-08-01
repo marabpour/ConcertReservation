@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html dir="rtl">
+    <head>
+        <title>سامانه فروش بلیط کنسرت</title>
+
+        <link rel="stylesheet" type="text/css" href="{% static 'ticketSales/css/bootstap.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'ticketSales/css/fontawesome.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'ticketSales/css/style.css' %}">
+    </head>
+    <body>
+        <h1>لیست کنسرت ها</h1>
+        <ul>
+            {% if concertlist %}
+            <p>تعداد کنسرت های موجود : {{concertcount}}</p>
+                {% for concert in concertlist %}
+                    <li>
+                        {{ concert }}
+                    </li>
+                {% endfor %}
+            {% endif %}    
+        </ul>
+    </body>
+    <script src="{% static 'ticketSales/js/jquery-3.6.0.min.js' %} "></script>
+    <script src="{% static 'ticketSales/js/bootstrap.bundle.js' %} "></script>
+    <script src="{% static 'ticketSales/js/fontawesome.js' %} "></script>
+    <script src="{% static 'ticketSales/js/main.js' %} "></script>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html dir="rtl">
+    <head>
+        <title>سامانه فروش بلیط کنسرت</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'ticketSales/css/style.css' %}">
+    </head>
+    <body>
+        <h1>لیست کنسرت ها</h1>
+        <ul>
+            {% if concertlist %}
+            <p>تعداد کنسرت های موجود : {{concertcount}}</p>
+                {% for concert in concertlist %}
+                    <li>
+                        {{ concert }}
+                    </li>
+                {% endfor %}
+            {% endif %}    
+        </ul>
+    </body>
+</html>
